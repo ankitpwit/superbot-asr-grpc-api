@@ -22,8 +22,6 @@ package superbot.asr;
 
 option cc_enable_arenas = true;
 
-import "superbot/sbt_audio.proto";
-
 /*
  * The SuperbotSpeechRecognition service provides two mechanisms for converting speech to text.
  */
