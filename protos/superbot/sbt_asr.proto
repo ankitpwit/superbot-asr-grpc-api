@@ -260,12 +260,14 @@ message StreamingRecognitionResult {
   // the recognizer will not return any further hypotheses for this portion of
   // the transcript and corresponding audio.
   bool is_final = 2;
-
+  
   // For multi-channel audio, this is the channel number corresponding to the
   // recognized result for the audio from that channel.
   // For audio_channel_count = N, its output values can range from '1' to 'N'.
   int32 channel_tag = 5;
 
+  // Length of audio processed so far in seconds
+  string lang = 6;
 }
 
 
