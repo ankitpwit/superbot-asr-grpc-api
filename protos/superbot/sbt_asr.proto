@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package superbot.asr;
+option go_package = "superbot/asr";
 
 option cc_enable_arenas = true;
 
