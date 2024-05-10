@@ -74,6 +74,16 @@ message SpeechRecognitionResult {
     repeated SpeechRecognitionAlternative alternatives = 1;
 
     int32 channel_tag = 2;
+
+    string detected_lang = 3;
+
+    float audio_processed = 4;
+
+    bool vad_detected = 5;
+
+    float inference_time = 6;
+
+    float wpm = 7;
 }
 
 message SpeechRecognitionAlternative {
@@ -108,6 +118,14 @@ message StreamingRecognitionResult {
     int32 channel_tag = 3;
 
     string detected_lang = 4;
+
+    float audio_processed = 5;
+
+    bool vad_detected = 6;
+
+    float inference_time = 7;
+
+    float wpm = 8;
 }
 
 
