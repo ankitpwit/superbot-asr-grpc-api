@@ -48,6 +48,8 @@ message RecognitionConfig {
     string model = 8;
 
     SpeakerDiarizationConfig diarization_config = 9;
+
+    int32 silence_duration = 10;
 }
 
 message StreamingRecognitionConfig {
