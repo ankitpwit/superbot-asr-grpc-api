@@ -49,7 +49,7 @@ message RecognitionConfig {
 
     SpeakerDiarizationConfig diarization_config = 9;
 
-    int32 silence_duration = 10;
+    string silence_duration = 10;
 }
 
 message StreamingRecognitionConfig {
